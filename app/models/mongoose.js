@@ -1,7 +1,7 @@
-var mongoose = require('mongoose')
+var mongoose = require('mongoose');
 
-var uristring = 'mongodb://localhost/myhipsterdb'
+var uristring = 'mongodb://localhost/myhipsterdb';
 
-mongoose.connect(uristring)
+mongoose.connect(uristring);
 
-module.exports = mongoose
+module.exports = mongoose;

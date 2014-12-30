@@ -1,4 +1,4 @@
-var Model = require('../models/model')
+var Model = require('../models/model');
 
 mainController = function (server) {
 	
@@ -6,14 +6,14 @@ mainController = function (server) {
 		
 		var model = new Model({
 			name : 'hanshavin'
-		})
+		});
 
-		model.save(function (err) {
-			if (err) return handleError(err);
-			res.send('hello frontend!! the data has been saved successfully :)')
-			console.log('model saved in the database', model)
-		})
-	})
-}
+	    model.save(function (err) {
+		if (err) return handleError(err);
+		res.send('hello frontend!! the data has been saved successfully :)');
+		console.log('model saved in the database', model);
+	    });
+	});
+};
 
-module.exports = mainController
+module.exports = mainController;

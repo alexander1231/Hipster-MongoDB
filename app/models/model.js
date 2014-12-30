@@ -3,8 +3,8 @@ var models = require('./mongoose'),
 
 var modelSchema = Schema({
 	name : String
-})
+});
 
-var Model = models.model('models', modelSchema)
+var Model = models.model('models', modelSchema);
 
-module.exports = Model
+module.exports = Model;
